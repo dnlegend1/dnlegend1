@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuerdos del Año Escolar</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #ffffff, #f5f5f5);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 60px;
+            border-radius: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            max-width: 800px;
+            margin: 30px;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 5em;
+            margin-bottom: 30px;
+            color: #333333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            font-size: 1.6em;
+            margin-bottom: 50px;
+            color: #555555;
+            line-height: 1.6;
+        }
+        .button {
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 25px 50px;
+            font-size: 1.6em;
+            border-radius: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+            cursor: pointer;
+            display: inline-block;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border: 2px solid transparent;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .button:active {
+            transform: translateY(2px);
+        }
+        .decorative-line {
+            width: 100%;
+            height: 2px;
+            background-color: #cccccc;
+            margin: 60px auto;
+        }
+        .quote {
+            font-style: italic;
+            font-size: 1.4em;
+            color: #777777;
+            margin-top: 40px;
+        }
+        .footer {
+            margin-top: 60px;
+            font-size: 1.2em;
+            color: #888888;
+        }
+        #fileInput {
+            display: none;
+        }
+        .fileLabel {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .fileLabel:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Recuerdos del Año Escolar</h1>
+        <p>¡Bienvenido a tu galería de recuerdos! Este es el lugar donde la magia de tus momentos escolares cobra vida. Sumérgete en una experiencia inolvidable llena de fotos, videos, anécdotas y más. ¡Cada recuerdo es una joya que merece ser apreciada!</p>
+        <label for="fileInput" class="fileLabel">Subir Archivos</label>
+        <input type="file" id="fileInput" accept="image/*, video/*" onchange="handleFiles(this.files)" multiple>
+        <div class="decorative-line"></div>
+        <p class="quote">"La vida es un cúmulo de momentos preciosos. ¡Haz que cada día de tu año escolar cuente!"</p>
+        <div class="footer">Creado con amor por [Tu Nombre] | Todos los derechos reservados © Año Actual</div>
+    </div>
+
+    <!-- Script para manejar la carga de archivos -->
+    <script>
+        function handleFiles(files) {
+            // Aquí puedes agregar el código para manejar los archivos subidos
+            // Por ejemplo, puedes mostrar una vista previa de las imágenes, reproducir los videos, etc.
+            alert("¡Archivos subidos con éxito!");
+        }
+    </script>
+</body>
+</html>
